@@ -7,6 +7,26 @@
     font-family: "VT323", 'PixelChinese', monospace;
 }
 
+@media (max-width: 600px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    input, button {
+        padding: 0.4rem;
+    }
+
+    .post {
+        width: 100%;
+        margin: 0.25rem 0;
+    }
+
+    .post--left, .post--right {
+        width: 100%;
+    }
+}
+
+
 body {
     background-color: #000;
     color: #fff;
@@ -21,7 +41,7 @@ body {
 
 main {
     height: 100vh;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     display: flex;
     flex-flow: column;
 }
@@ -120,10 +140,10 @@ button {
 .room-list,
 .activity {
     width: 100%;
-    min-height: 2.65rem;
+    min-height: 2rem;
     margin: 0 auto;
     max-width: 600px;
-    padding: .75rem .25rem;
+    padding: .5rem .25rem;
 }
 
 .activity {
