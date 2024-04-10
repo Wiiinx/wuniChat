@@ -141,9 +141,22 @@ button {
         position: relative; /* Establish positioning context */
     }
     .form-msg {
-        position: sticky; /* Stick to the bottom */
-        bottom: 0; /* Align to the bottom */
-        z-index: 10; /* Ensure it's above other content */
+        display: flex;
+        flex-direction: row; /* Align children horizontally */
+        justify-content: space-between; /* Distribute space between elements */
+        gap: 0.25rem; /* Adjust the gap between elements */
+        width: 100%; /* Use full width */
+    }
+
+    .form-msg input[type="text"] {
+        flex: 1; /* Take up as much space as possible */
+        margin-right: 0.25rem; /* Add a little margin to the right of the input */
+    }
+
+    .form-msg button {
+        white-space: nowrap; /* Prevent the text inside the button from wrapping */
+        padding: 0.5rem 1rem; /* Add padding inside the button */
+        /* Set a width or flex-basis if you want to specify button width */
     }
 
     form {
@@ -153,62 +166,31 @@ button {
         align-items: center;
         gap: 0.25rem; /* Adjust the gap between elements */
     }
-
-    input,
-    button {
-        color: #fff;
-        width: 100%; /* Full width for inputs and buttons */
-    }
-
-    .chat-display {
-        width: 100%; /* Use full width */
-        margin: 0.25rem 0; /* Adjust margins */
-    }
-
-    .post {
-        margin: 0.125rem 0; /* Adjust margins for posts */
-    }
-
-    .post--left{
-        width: 60%;
-        align-self: flex-end;
-    }
-    .post--right {
-        width: 60%;
-        align-self: flex-start;
-    }
-}
-
-
-@media (max-width: 450px) {
-    main {
-        font-size: 1rem; /* Adjust font size for better readability */
-        padding: 0.2rem; /* Reduce padding for more screen space */
-        display: flex; /* Set up flexbox layout */
-        flex-direction: column; /* Stack children vertically */
-        justify-content: space-between; /* Space between items */
-        max-height: 90vh; /* Limit the maximum height */
-        overflow: auto; /* Allow scrolling */
-        position: relative; /* Establish positioning context */
-    }
-    .form-msg {
-        position: sticky; /* Stick to the bottom */
-        bottom: 0; /* Align to the bottom */
-        z-index: 10; /* Ensure it's above other content */
-    }
-
-    form {
+    .form-join {
         display: flex;
         width: 100%; /* Use full width */
-        flex-direction: column; /* Stack inputs vertically */
-        align-items: center;
+        flex-direction: row; /* Align children horizontally */
+        justify-content: space-between; /* Distribute space between elements */
         gap: 0.25rem; /* Adjust the gap between elements */
     }
 
-    input,
+    .form-join input[type="text"],
+    .form-join button {
+        flex-grow: 1; /* Allow inputs and button to grow and fill the form */
+        margin: 0.1rem; /* Small margin for spacing */
+    }
+
+    /* If you want the button to be smaller than the input fields */
+    .form-join button {
+        flex-grow: 0; /* Do not allow the button to grow */
+        flex-basis: 20%; /* Set the base width of the button */
+    }
+
+    input{
+        width: 30%;
+    }
     button {
-        color: #fff;
-        width: 100%; /* Full width for inputs and buttons */
+        width: 40%;
     }
 
     .chat-display {
