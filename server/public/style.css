@@ -133,8 +133,17 @@ button {
     main {
         font-size: 1rem; /* Adjust font size for better readability */
         padding: 0.2rem; /* Reduce padding for more screen space */
-        max-height: 90vh;
-        overflow: auto;
+        display: flex; /* Set up flexbox layout */
+        flex-direction: column; /* Stack children vertically */
+        justify-content: space-between; /* Space between items */
+        max-height: 90vh; /* Limit the maximum height */
+        overflow: auto; /* Allow scrolling */
+        position: relative; /* Establish positioning context */
+    }
+    .form-msg {
+        position: sticky; /* Stick to the bottom */
+        bottom: 0; /* Align to the bottom */
+        z-index: 10; /* Ensure it's above other content */
     }
 
     form {
@@ -147,6 +156,7 @@ button {
 
     input,
     button {
+        color: #fff;
         width: 100%; /* Full width for inputs and buttons */
     }
 
@@ -159,10 +169,13 @@ button {
         margin: 0.125rem 0; /* Adjust margins for posts */
     }
 
-    .post--left,
+    .post--left{
+        width: 60%;
+        align-self: flex-end;
+    }
     .post--right {
-        width: 100%; /* Full width for posts */
-        align-self: center; /* Center posts */
+        width: 60%;
+        align-self: flex-start;
     }
 }
 
@@ -171,8 +184,17 @@ button {
     main {
         font-size: 1rem; /* Adjust font size for better readability */
         padding: 0.2rem; /* Reduce padding for more screen space */
-        max-height: 90vh;
-        overflow: auto;
+        display: flex; /* Set up flexbox layout */
+        flex-direction: column; /* Stack children vertically */
+        justify-content: space-between; /* Space between items */
+        max-height: 90vh; /* Limit the maximum height */
+        overflow: auto; /* Allow scrolling */
+        position: relative; /* Establish positioning context */
+    }
+    .form-msg {
+        position: sticky; /* Stick to the bottom */
+        bottom: 0; /* Align to the bottom */
+        z-index: 10; /* Ensure it's above other content */
     }
 
     form {
@@ -185,6 +207,7 @@ button {
 
     input,
     button {
+        color: #fff;
         width: 100%; /* Full width for inputs and buttons */
     }
 
@@ -197,9 +220,12 @@ button {
         margin: 0.125rem 0; /* Adjust margins for posts */
     }
 
-    .post--left,
+    .post--left{
+        width: 60%;
+        align-self: flex-end;
+    }
     .post--right {
-        width: 100%; /* Full width for posts */
-        align-self: center; /* Center posts */
+        width: 60%;
+        align-self: flex-start;
     }
 }
