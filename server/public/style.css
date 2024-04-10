@@ -1,5 +1,4 @@
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -132,7 +131,8 @@ button {
 
 @media (max-width: 450px) {
     main {
-        font-size: smaller; /* Adjust font size for better readability */
+        font-size: 1rem; /* Adjust font size for better readability */
+        height: 200px;
         padding: 0.25rem; /* Reduce padding for more screen space */
     }
 
@@ -142,8 +142,6 @@ button {
         flex-direction: column; /* Stack inputs vertically */
         align-items: center;
         gap: 0.25rem; /* Adjust the gap between elements */
-        height: 200px; /* Example fixed height */
-        overflow: auto; /* Make the form scrollable if content overflows */
     }
 
     input,
