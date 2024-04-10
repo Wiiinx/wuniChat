@@ -131,14 +131,14 @@ button {
 
 @media (max-width: 450px) {
     main {
-        font-size: 0.5rem; /* Adjust font size for better readability */
-        padding: 0.25rem; /* Reduce padding for more screen space */
-        height: fit-content;
+        font-size: 1rem; /* Adjust font size for better readability */
+        padding: 0.2rem; /* Reduce padding for more screen space */
+        height: 50%;
     }
 
     form {
         display: flex;
-        width: 100%; /* Use full width */
+        width: auto; /* Use full width */
         flex-direction: column; /* Stack inputs vertically */
         align-items: center;
         gap: 0.25rem; /* Adjust the gap between elements */
