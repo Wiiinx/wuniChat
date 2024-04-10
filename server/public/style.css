@@ -131,9 +131,9 @@ button {
 
 @media (max-width: 450px) {
     main {
-        font-size: 1rem; /* Adjust font size for better readability */
-        height: 200px;
+        font-size: 0.5rem; /* Adjust font size for better readability */
         padding: 0.25rem; /* Reduce padding for more screen space */
+        height: fit-content;
     }
 
     form {
