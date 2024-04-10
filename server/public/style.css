@@ -133,12 +133,13 @@ button {
     main {
         font-size: 1rem; /* Adjust font size for better readability */
         padding: 0.2rem; /* Reduce padding for more screen space */
-        height: 50%;
+        max-height: 90vh;
+        overflow: auto;
     }
 
     form {
         display: flex;
-        width: auto; /* Use full width */
+        width: 100%; /* Use full width */
         flex-direction: column; /* Stack inputs vertically */
         align-items: center;
         gap: 0.25rem; /* Adjust the gap between elements */
