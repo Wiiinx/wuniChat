@@ -129,6 +129,44 @@ button {
     font-style: italic;
 }
 
+@media (max-width: 750px) {
+    main {
+        font-size: 1rem; /* Adjust font size for better readability */
+        padding: 0.2rem; /* Reduce padding for more screen space */
+        max-height: 90vh;
+        overflow: auto;
+    }
+
+    form {
+        display: flex;
+        width: 100%; /* Use full width */
+        flex-direction: column; /* Stack inputs vertically */
+        align-items: center;
+        gap: 0.25rem; /* Adjust the gap between elements */
+    }
+
+    input,
+    button {
+        width: 100%; /* Full width for inputs and buttons */
+    }
+
+    .chat-display {
+        width: 100%; /* Use full width */
+        margin: 0.25rem 0; /* Adjust margins */
+    }
+
+    .post {
+        margin: 0.125rem 0; /* Adjust margins for posts */
+    }
+
+    .post--left,
+    .post--right {
+        width: 100%; /* Full width for posts */
+        align-self: center; /* Center posts */
+    }
+}
+
+
 @media (max-width: 450px) {
     main {
         font-size: 1rem; /* Adjust font size for better readability */
