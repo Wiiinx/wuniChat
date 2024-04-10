@@ -1,4 +1,4 @@
-const socket = io('https://wuni-chat.vercel.app')
+const socket = io('https://wunichat.vercel.app/')
 
 const msgInput = document.querySelector('#message')
 const nameInput = document.querySelector('#name')
