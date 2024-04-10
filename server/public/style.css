@@ -7,22 +7,36 @@
     font-family: "VT323", 'PixelChinese', monospace;
 }
 
-@media (max-width: 600px) {
-    body {
-        font-size: 0.8rem;
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    main {
+        padding: 0.5rem; /* Reduce padding */
     }
 
-    input, button {
-        padding: 0.4rem;
+    form {
+        flex-direction: column; /* Stack inputs vertically */
+        gap: 0.5rem; /* Adjust the gap between elements */
+    }
+
+    input,
+    button {
+        width: 100%; /* Full width for inputs and buttons */
+        max-width: none; /* Override the max-width */
+    }
+
+    .chat-display {
+        margin: 0.5rem 0; /* Adjust margins */
+        max-width: none; /* Allow chat display to fill the width */
     }
 
     .post {
-        width: 100%;
-        margin: 0.25rem 0;
+        margin: 0.25rem 0; /* Adjust margins for posts */
     }
 
-    .post--left, .post--right {
-        width: 100%;
+    .post--left,
+    .post--right {
+        width: 100%; /* Full width for posts */
+        align-self: center; /* Center posts */
     }
 }
 
