@@ -7,40 +7,6 @@
     font-family: "VT323", 'PixelChinese', monospace;
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    main {
-        padding: 0.5rem; /* Reduce padding */
-    }
-
-    form {
-        flex-direction: column; /* Stack inputs vertically */
-        gap: 0.5rem; /* Adjust the gap between elements */
-    }
-
-    input,
-    button {
-        width: 100%; /* Full width for inputs and buttons */
-        max-width: none; /* Override the max-width */
-    }
-
-    .chat-display {
-        margin: 0.5rem 0; /* Adjust margins */
-        max-width: none; /* Allow chat display to fill the width */
-    }
-
-    .post {
-        margin: 0.25rem 0; /* Adjust margins for posts */
-    }
-
-    .post--left,
-    .post--right {
-        width: 100%; /* Full width for posts */
-        align-self: center; /* Center posts */
-    }
-}
-
-
 body {
     background-color: #000;
     color: #fff;
@@ -162,4 +128,39 @@ button {
 
 .activity {
     font-style: italic;
+}
+
+@media (max-width: 450px) {
+    main {
+        font-size: smaller; /* Adjust font size for better readability */
+        padding: 0.25rem; /* Reduce padding for more screen space */
+    }
+
+    form {
+        display: flex;
+        width: 100%; /* Use full width */
+        flex-direction: column; /* Stack inputs vertically */
+        align-items: center;
+        gap: 0.25rem; /* Adjust the gap between elements */
+    }
+
+    input,
+    button {
+        width: 100%; /* Full width for inputs and buttons */
+    }
+
+    .chat-display {
+        width: 100%; /* Use full width */
+        margin: 0.25rem 0; /* Adjust margins */
+    }
+
+    .post {
+        margin: 0.125rem 0; /* Adjust margins for posts */
+    }
+
+    .post--left,
+    .post--right {
+        width: 100%; /* Full width for posts */
+        align-self: center; /* Center posts */
+    }
 }
