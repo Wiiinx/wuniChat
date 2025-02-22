@@ -1,3 +1,3 @@
 Hi there! 
 
-Click here --> https://wunichat.onrender.com/ to join the chat!!
+Click here --> [https://wunichat.onrender.com/](https://wunichat.vercel.app) to join the chat!!
